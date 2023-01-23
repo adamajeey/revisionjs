@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+      /*   Autorisation film
+
+        const year = 2022;
+        const naiss = prompt('Quelle est votre annee de naissance ?');
+        const age = year - naiss;
+
+        if (age <= 13) {
+            console.log('Lilo & Stitch')   
+        } else if (age < 18){
+            console.log('Matrix')
+        } else {
+            console.log('Evil dead')
+        }  */
+
+        /* A * B = E est positive / negative
+        
+        const a = prompt('Entrer un premier nombre')
+        const b = prompt('Entrer un second nombre')
+        const result = a * b
+        if (result > 0) {
+            console.log('Positif')
+        } else {
+            console.log('Negatif')
+        } */
+
+        //boucle choisi un nombre qui est entre 0 et 10
+
+ /*    let chiffre = prompt('Entrer un nombre')
+    if (chiffre > 10 || chiffre < 0) {
+        console.log("le nombre n'est pas entre 0 et 10")
+    } else {
+        while (chiffre >= 0) {
+            console.log(chiffre)
+            chiffre--
+        } 
+
+         for (let i = chiffre; i >= 0; i--) {
+            console.log(i)
+        } 
+    } */
+
+      /*   function canDrive(age, pays){
+            if (
+             (age >= 18 && pays === 'FR') ||
+             (age >= 16 && pays === 'US')
+             ) {
+                return true
+            }
+                return false
+        }
+        console.log(canDrive(18, 'FR')) */
+        
+        
+       /*  function getRandomInt(max) {
+            return Math.floor(Math.random() * (max + 1))
+            
+        }
+        const solution = getRandomInt(10)
+        console.log(solution)
+        function isRight(n) {
+            return solution === n
+        }
+
+        function guess() {
+
+            const number = prompt('Entrez un chiffre') * 1
+            return isRight(number)
+        }
+
+        for (i = 0; i < 3; i++) {
+           if (guess()) {
+            console.log('Bravo')
+            break;
+           } else if (i === 2) {
+            console.log('Vous avez perdu')
+           }
+            
+        } */
+
+        //Nombre 1er
+
+        /* function isPremier(n){
+            if (n < 2){
+                return false
+            }
+
+            for (let i = n - 1; i > 1; i--) {
+               if (n % i === 0){
+                return false
+               }
+                
+            }
+            return true
+        }
+
+        console.log('0', isPremier(0))
+        console.log('1', isPremier(1))
+        console.log('2', isPremier(2))
+        console.log('3', isPremier(3))
+        console.log('4', isPremier(4))
+        console.log('11', isPremier(11))
+        console.log('12', isPremier(12)) */
+
+
+      //calculer la moyenne des eleves 
+      
+      
+/*         const students = [
+            {
+                name: 'Cheikh',
+                notes: [1, 20, 18, 19, 12]
+            },
+
+            {
+                name: 'Modou',
+                notes: [17, 18, 20, 13, 15]
+            },
+
+            {
+                name: 'Issa',
+                notes: [17, 12, 14, 15, 13]
+            },
+
+            {
+                name: 'Ndeye',
+                notes: [2, 3, 5, 8, 9]
+            },
+
+            {
+                name: 'Adama',
+                notes: [18, 17, 18, 19, 12]
+            },
+        ]
+
+        const moyenne = (notes) => {
+            
+            let sum = 0
+            for (let note of notes) {
+                sum = sum + note
+            }
+            return sum / notes.length
+        }
+
+        const compareStudent = (a, b) => {
+            return b.moyenne - a.moyenne
+        }
+        
+        for (let student of students) {
+            student.moyenne = moyenne(student.notes)
+            student.worst = Math.min(...student.notes)
+            student.best = Math.max(...student.notes)
+        }
+
+        students.sort(compareStudent)
+
+        const   formaStudents = (student) => {
+            return `${student.name} avec une moyenne de ${student.moyenne}, meilleure note(${student.best}), pire note(${student.worst})`
+        }
+        alert(`Top 3 etudiants
+        1: ${formaStudents(students[0])}
+        2: ${formaStudents(students[1])}
+        3: ${formaStudents(students[2])}
+        `) 
+ */
+
+    class student {
+        ecole = 'Seydina Limamou Lahi'
+    }
+    const john = new student()
+    console.log(john)
+
+    </script>
+
+</body>
+</html>
